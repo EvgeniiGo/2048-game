@@ -1,1 +1,1 @@
-# 2048-game
+# Minesweeper game with Javascript
