@@ -1,0 +1,193 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  min-width: 320px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  min-width: 190px;
+}
+
+.navbar__buttons {
+  display: flex;
+  min-width: 192px;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 10px;
+}
+
+.navbar__button {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.navbar__button:hover {
+  opacity: 0.7;
+}
+
+.navbar__button_active {
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px grey solid;
+  border-radius: 5px;
+}
+
+.main__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main__bomb-counter {
+  height: 17px;
+  position: relative;
+  left: 20px;
+}
+
+.main__bomb-counter::after {
+  content: url("/images/bomb-icon.svg");
+  object-fit: contain;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: -20px;
+}
+
+.main__button {
+  background-image: url("./images/smile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #faebd7;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px #666;
+  cursor: pointer;
+}
+
+.main__button:active {
+  box-shadow: -1px -1px #666;
+  transform: translate(2px, 2px);
+}
+
+.main__button_reaction {
+  background-image: url("./images/open-smile.png");
+}
+
+.main__button_stopped {
+  background-image: url("./images/bad-smile.png");
+}
+
+.main__button_win {
+  background-image: URL("./images/winner.png");
+}
+
+.main__time {
+}
+
+.main__field {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1px;
+}
+
+.main__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__cell {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faebd7;
+  cursor: pointer;
+}
+
+/* Opened cell without any bombs around */
+.main__cell_opened {
+  background-color: #d3d3d3;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* Opened cell with bomb */
+.main__cell_bomb {
+  background-image: url("./images/bomb.jpg");
+  background-size: contain;
+}
+
+/* Cell with flag */
+.main__cell_flag {
+  background-image: url("./images/flag.png");
+  background-size: contain;
+}
+
+/* Opened cell with 1 adjacent bomb */
+.main__cell_blue {
+  color: blue;
+}
+
+/* Opened cell with 2 adjacent bomb */
+.main__cell_green {
+  color: green;
+}
+
+/* Opened cell with 3 adjacent bomb */
+.main__cell_red {
+  color: red;
+}
+
+/* Opened cell with 4 adjacent bomb */
+.main__cell_darkblue {
+  color: darkblue;
+}
+
+/* Opened cell with 5 adjacent bomb */
+.main__cell_darkred {
+  color: brown;
+}
+
+/* Opened cell with 6 adjacent bomb */
+.main__cell_purple {
+  color: purple;
+}
+
+/* Opened cell with 7 adjacent bomb */
+.main__cell_orange {
+  color: orange;
+}
+
+/* Opened cell with 8 adjacent bomb */
+.main__cell_black {
+  color: black;
+}

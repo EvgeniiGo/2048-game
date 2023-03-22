@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">Welcome to Minesweeper online!</header>
+      <nav class="navbar">
+        <ul class="navbar__buttons">
+          <li class="navbar__button navbar__button_active" id="beginner">
+            Beginner
+          </li>
+          <li class="navbar__button" id="intermediate">Intermediate</li>
+          <li class="navbar__button" id="expert">Expert</li>
+          <li class="navbar__button" id="custom">Custom</li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="main__heading">
+          <div class="main__bomb-counter"></div>
+          <button class="main__button" type="button"></button>
+          <div class="main__time">000</div>
+        </div>
+        <div class="main__field"></div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
